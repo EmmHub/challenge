@@ -29,7 +29,7 @@ const H1 = styled.h1`
 `
 
 const Header = (): JSX.Element => {
-    console.log('header')
+   
     return (
         <Div>
             <Link href='/'>

@@ -5,7 +5,7 @@ import { InferGetServerSidePropsType } from 'next'
 
 const createUserForm = ({ data }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
     const { roles } = data
-    console.log('createusersform')
+  
     return (
         <Layout template='50px 500px / 150px 550px' justify='center'>
             <UsersForm
