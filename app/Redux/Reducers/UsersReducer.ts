@@ -92,7 +92,7 @@ const useReducer = (state = inicialState, action: ActionsTypes): Istate => {
             return {
                 ...state,
 
-                users: state.users.filter((user) => user !== state.userDelete),
+                users: state.users.filter((user) => user.id !== state.userDelete.id),
                 success: action.payload,
                 error: false,
                 addUser: null,
